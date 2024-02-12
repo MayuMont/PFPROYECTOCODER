@@ -1,0 +1,374 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li , a {
+    font-style: none;
+    text-decoration: none;
+    color: white; 
+    display: inline-block;
+    list-style: none;
+    /*background-color: #E41010;*/
+}
+
+#body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#main {
+    min-height: 80vh;
+}
+
+#mainPages {
+    min-height: 80vh;
+}
+
+#mainPerros { 
+    min-height: 80vh;
+}
+
+/*/////////ESTILO HEADER/////////*/
+
+#header { 
+    width: 100%;
+    height: auto;
+}
+
+#nav {
+    background-color: #E41010;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px;
+}
+
+.logoNav img {
+    width: 200px;
+    height: auto;
+}
+
+ul {
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    gap: 50px;
+}
+
+.currentPage {
+    color: yellow;
+}
+
+/*/////////ESTILO MAIN/////////*/
+
+#main { 
+    background-color: #E41010;
+}
+
+#mainPages {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 30px 0px 50px;
+}
+
+#mainPerros {
+    padding: 30px 50px 50px;
+}
+
+.portAlineado {
+    display: flex;
+    justify-content: center;
+    /*flex-direction: column;*/
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blanco , .amarillo {
+    text-align: center;
+}
+
+.blanco {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.amarillo { 
+    color: yellow;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.textoPortada { 
+    color: white;
+}
+
+.portAlineado , .botonComprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonPortada {
+    font-weight: bold;
+    height: 60px;
+    width: 150px;
+    color: #121212;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineaCurva{
+    width: 15%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 480px;
+}
+
+.mainImgPrin {
+    width: 560px;
+    height: auto;
+}
+
+/*/////ESTILOS MAIN / PERROS//////*/
+
+#titlePerros h1 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+}
+
+#bannerComida {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.bannerComida__boxes {
+    background-color: white;
+    width: 230px;
+    height: 295px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    box-shadow: 0 0 10px #b1b1b1;
+}
+
+.bannerComida__boxes img {
+    width: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bannerComida h5 {
+    color: #727171;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.parrafo__img {
+    font-size: 15px;
+    color: #121212;
+}
+
+/*////// ESTILOS MAIN / CONTACTO ////////*/
+
+.titleContact {
+    margin: 50px;
+    padding: 20px;
+}
+
+.h1Contact {
+    font-weight: 700;
+    font-size: 30px;
+    color: #727171;
+    text-align: left;
+}
+
+.imgHuella {
+    text-align: left;
+    flex: 1;
+    padding-right: 20px;
+}
+
+.imgHuella img {
+    width: 45%;
+    height: auto;
+    position: absolute;
+}
+
+/*/////ESTILOS MARCAS / MAIN//////*/
+
+#marcas {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 50px;
+    flex-wrap: wrap;
+    padding: 20px 20px 50px;
+}
+
+.marcas__boxes {
+    background-color: white;
+    width: 120px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcas__boxes img {
+    width: 120px;
+}
+
+.marcas__Home1 img {
+    width: auto;
+    height: 50px;
+}
+
+/*//ESTILOS MAIN /FORMULARIO CONTACTO//*/
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    align-items: center;*/
+    gap: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="phone"],
+.form input[type="password"] {
+    height: calc(50px + 2 * 10px); /* 50px de altura + 2 * 10px de margen */
+    width: 410px;
+    border-radius: 10px;
+    border: 1px solid #727171;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.textForm legend {
+    font-weight: bold;
+    font-size: 30px;
+    color: #E41010;
+    text-align: center;
+    padding: 10px;
+}
+
+.textForm p {
+    padding: 10px 10px 20px;
+}
+
+.botonEnviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enviar { 
+    height: 50px;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #727171;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    margin: 20px;
+}
+
+/*/////ESTILOS DE FOOTER//////*/
+
+#footer {
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+    position: relative;
+    /*border-top: 1px solid #727171;*/
+}
+
+#footer::before {
+    content: ''; /* Agrega contenido al pseudo-elemento */
+    position: absolute; /* Establece posición absoluta */
+    top: 0; /* Posición desde la parte superior del footer */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centro */
+    width: 95%; /* Ancho del pseudo-elemento */
+    height: 1px; /* Grosor de la línea */
+    background-color: #727171; /* Color de la línea */
+}
+
+.footerLogoImg{
+    width: 200px;
+    height: auto;
+}
+
+.derechos { 
+    color: #727171;
+    font-size: 13px;
+}
+
+.footerRedes a {
+    font-size: 30px;
+    margin-left: 15px;
+    color: #727171;
+    width: 60px;
+    padding: 10px;
+}
+
+.footerRedes { 
+    display: flex;
+    align-items: center;
+}
