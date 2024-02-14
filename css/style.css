@@ -253,6 +253,7 @@ ul {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #gridAnimales {
@@ -275,7 +276,6 @@ ul {
     margin-top: 20px;
     width: 90%;
     height: 100%;
-    cursor: pointer;
     padding: 20px;
 }
 
