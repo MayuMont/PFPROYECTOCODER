@@ -44,7 +44,7 @@ li , a {
 #nav {
     background-color: #E41010;
     width: 100vw;
-    height: 80px;
+    height: 90px;
     z-index: 50;
     position: fixed;
     display: flex;
@@ -94,7 +94,7 @@ ul {
 }
 
 #mainAnimales {
-    padding: 100px 50px 50px;
+    padding: 115px 50px 50px;
 }
 
 .portAlineado {
@@ -103,7 +103,7 @@ ul {
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 .textPrin {
@@ -165,7 +165,7 @@ ul {
     margin: 0 20px;
 }
 
-/*/////ESTILOS MAIN / PERROS//////*/
+/*/////ESTILOS MAIN / PERROS - GATOS//////*/
 
 #titleAnimales h1 {
     font-weight: 700;
@@ -181,6 +181,7 @@ ul {
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .boxComida__boxes {
@@ -193,6 +194,7 @@ ul {
     padding: 20px;
     gap: 10px;
     box-shadow: 0 0 10px #b1b1b1;
+    cursor: pointer;
 }
 
 .img_boxes {
@@ -241,6 +243,56 @@ ul {
     border: none;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+/*///// ESTILOS MAIN / OTRAS MASCOTAS////////*/
+
+.boxGrid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#gridAnimales {
+    margin-left: 5%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*100/4 = 5*/
+    grid-template-rows: repeat(2, 200px); /*filas, quiere decir 2 filas de 200px*/
+    gap: 20px;
+
+    grid-template-areas:
+
+    /* COL=1        COL=2      COL=3*/
+    "reoedorGrid1 avesGrid2 anfibioGrid4" /*fila 1*/
+    "reoedorGrid1 acuaticosGrid3 anfibioGrid4" /*fila 2*/
+    ;
+}
+
+#gridAnimales {
+    margin-top: 20px;
+    width: 90%;
+    height: 100%;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.reoedorGrid1 { 
+    grid-area: reoedorGrid1; 
+}
+
+.avesGrid2 { 
+    grid-area: avesGrid2; 
+}
+
+.acuaticosGrid3 { 
+    grid-area: acuaticosGrid3; 
+}
+
+.anfibioGrid4 { 
+    grid-area: anfibioGrid4; 
 }
 
 /*////// ESTILOS MAIN / CONTACTO ////////*/
